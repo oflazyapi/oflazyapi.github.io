@@ -55,8 +55,8 @@
                     <div class="col-md-12">
                         <!-- logo begin -->
                         <h1 id="logo">
-                            <a href="index-2.html">
-                                <img class="logo" width="100%" src="images/mimarlogo.png" alt="Mimarlık V1">
+                            <a href="index.html">
+                                <img class="logo" style="width:250px; padding-top:7px;" src="images/mimarlogo.png" alt="Mimarlık V1">
                             </a>
                         </h1>
                         <!-- logo close -->
@@ -190,36 +190,36 @@
               <ul class="single-comment ">
                               <li class="post-content-comment grey-section">
                     <div class="img">
-                        <img alt='' src="images/avatar.png" class="avatar avatar-70 photo" height="70" width="70" />		
+                        <img alt='' src="images/avatar.png" class="avatar avatar-70 photo" height="70" width="70" />
                     </div>
                     <div class="comment-content">
                         <h6>Osman FATSA</h6>
-                    </div>		
+                    </div>
                     <div class="date">
                         <span class="c_date">16 Eylül 2015, 14:14</span>
                     </div>
                     <div class="comment-content">
                          <p>Projeyi başarılı kılan, m&uuml;şteri istekleri doğrultusunda, tam zamanında ve hesaplanan b&uuml;t&ccedil;e sınırları i&ccedil;erisinde, iş&ccedil;ilik ve kaliteden &ouml;d&uuml;n vermeden tamamlanan projedir.</p>
-                     </div>		
-                       <div class="clearfix"></div>	
-                    </li> 
+                     </div>
+                       <div class="clearfix"></div>
+                    </li>
                                   <li class="post-content-comment grey-section">
                     <div class="img">
-                        <img alt='' src="images/avatar.png" class="avatar avatar-70 photo" height="70" width="70" />		
+                        <img alt='' src="images/avatar.png" class="avatar avatar-70 photo" height="70" width="70" />
                     </div>
                     <div class="comment-content">
                         <h6>Engin TAŞ</h6>
-                    </div>		
+                    </div>
                     <div class="date">
                         <span class="c_date">16 Eylül 2015, 14:06</span>
                     </div>
                     <div class="comment-content">
                          <p>&Ccedil;ağımızda insanlar artık bilgiye, tecr&uuml;beye ve uzmanlığa inanıyor. &Ouml;zellikle teknolojinin hızlı gelişimi ve şehirlerin yatay eksende b&uuml;y&uuml;mesi, zaman y&ouml;netiminin (time-management) ne kadar &ouml;nemli olduğunu g&ouml;steriyor.</p>
-                     </div>		
-                       <div class="clearfix"></div>	
-                    </li> 
-                   			 </ul>		
-		
+                     </div>
+                       <div class="clearfix"></div>
+                    </li>
+                   			 </ul>
+
 		<div class="leave-reply grey-section form">
     		<div id="respond" class="comment-respond">
             <div id="note"></div>
@@ -280,7 +280,7 @@
             </div>
     </div>
 </div>
-</div> 
+</div>
             <!-- footer begin -->
             <footer>
                 <div class="container">
@@ -359,57 +359,57 @@
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    
-    <script type="text/javascript"> 
+
+    <script type="text/javascript">
 		$(function(){
 			function sonucGizle(){
 			$("#note").hide();
 			}
 			$("#submit").click(function(){
 			$("#note").show();
-			$.ajax({ 
+			$.ajax({
 				type: "POST",
 				url: "yorum.php",
-				data: $('#fixform').serialize(), 
-				error:function(){ 
-				alert("Bir hata algılandı."); 
+				data: $('#fixform').serialize(),
+				error:function(){
+				alert("Bir hata algılandı.");
 				},
-				success: function(veri) { 
+				success: function(veri) {
 					 $('#note').html(veri);
 						setTimeout(sonucGizle,3000);
 						document.forms["fixform"].reset();
-					}   
+					}
 				});
 			});
-			
+
 			return false;
 		});
 	</script>
-    <script type="text/javascript"> 
+    <script type="text/javascript">
 		$(function(){
 			function sonucGizlee(){
 			$("#iletisimsonuc").hide();
 			}
 			$("#send_message").click(function(){
 			$("#iletisimsonuc").show();
-			$.ajax({ 
+			$.ajax({
 				type: "POST",
 				url: "mesaj.php",
-				data: $('#contact_form').serialize(), 
-				error:function(){ 
-				alert("Bir hata algılandı."); 
+				data: $('#contact_form').serialize(),
+				error:function(){
+				alert("Bir hata algılandı.");
 				},
-				success: function(veri) { 
+				success: function(veri) {
 					 $('#iletisimsonuc').html(veri);
 						setTimeout(sonucGizlee,3000);
 						document.forms["contactForm"].reset();
-					}   
+					}
 				});
 			});
 			return false;
 		});
 	</script>
-     
+
 
 
 </body>

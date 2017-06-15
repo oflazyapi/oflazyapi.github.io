@@ -55,8 +55,8 @@
                     <div class="col-md-12">
                         <!-- logo begin -->
                         <h1 id="logo">
-                            <a href="index-2.html">
-                                <img class="logo" width="100%" src="images/mimarlogo.png" alt="Mimarlık V1">
+                            <a href="index.html">
+                                <img class="logo" style="width:250px; padding-top:7px;" src="images/mimarlogo.png" alt="Mimarlık V1">
                             </a>
                         </h1>
                         <!-- logo close -->
@@ -190,21 +190,21 @@
               <ul class="single-comment ">
                               <li class="post-content-comment grey-section">
                     <div class="img">
-                        <img alt='' src="images/avatar.png" class="avatar avatar-70 photo" height="70" width="70" />		
+                        <img alt='' src="images/avatar.png" class="avatar avatar-70 photo" height="70" width="70" />
                     </div>
                     <div class="comment-content">
                         <h6>Ali VELİ</h6>
-                    </div>		
+                    </div>
                     <div class="date">
                         <span class="c_date">16 Eylül 2015, 14:27</span>
                     </div>
                     <div class="comment-content">
                          <p>Zamanin tek bir davranisi vardir: Durmadan akar. Toplanamaz, depolanamaz,tekrarlanamaz ve harcanir. insan sinirli bir yasama sahip oldugu i&ccedil;in zamani etkin kullanmak zorundadir. Zamansizliktan yakinanlarin bir &ccedil;ogu zamani iyi kullanmasini bilmeyenlerdir</p>
-                     </div>		
-                       <div class="clearfix"></div>	
-                    </li> 
-                   			 </ul>		
-		
+                     </div>
+                       <div class="clearfix"></div>
+                    </li>
+                   			 </ul>
+
 		<div class="leave-reply grey-section form">
     		<div id="respond" class="comment-respond">
             <div id="note"></div>
@@ -265,7 +265,7 @@
             </div>
     </div>
 </div>
-</div> 
+</div>
             <!-- footer begin -->
             <footer>
                 <div class="container">
@@ -344,57 +344,57 @@
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    
-    <script type="text/javascript"> 
+
+    <script type="text/javascript">
 		$(function(){
 			function sonucGizle(){
 			$("#note").hide();
 			}
 			$("#submit").click(function(){
 			$("#note").show();
-			$.ajax({ 
+			$.ajax({
 				type: "POST",
 				url: "yorum.php",
-				data: $('#fixform').serialize(), 
-				error:function(){ 
-				alert("Bir hata algılandı."); 
+				data: $('#fixform').serialize(),
+				error:function(){
+				alert("Bir hata algılandı.");
 				},
-				success: function(veri) { 
+				success: function(veri) {
 					 $('#note').html(veri);
 						setTimeout(sonucGizle,3000);
 						document.forms["fixform"].reset();
-					}   
+					}
 				});
 			});
-			
+
 			return false;
 		});
 	</script>
-    <script type="text/javascript"> 
+    <script type="text/javascript">
 		$(function(){
 			function sonucGizlee(){
 			$("#iletisimsonuc").hide();
 			}
 			$("#send_message").click(function(){
 			$("#iletisimsonuc").show();
-			$.ajax({ 
+			$.ajax({
 				type: "POST",
 				url: "mesaj.php",
-				data: $('#contact_form').serialize(), 
-				error:function(){ 
-				alert("Bir hata algılandı."); 
+				data: $('#contact_form').serialize(),
+				error:function(){
+				alert("Bir hata algılandı.");
 				},
-				success: function(veri) { 
+				success: function(veri) {
 					 $('#iletisimsonuc').html(veri);
 						setTimeout(sonucGizlee,3000);
 						document.forms["contactForm"].reset();
-					}   
+					}
 				});
 			});
 			return false;
 		});
 	</script>
-     
+
 
 
 </body>

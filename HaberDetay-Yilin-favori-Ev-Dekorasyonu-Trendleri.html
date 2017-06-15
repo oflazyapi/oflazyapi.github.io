@@ -55,8 +55,8 @@
                     <div class="col-md-12">
                         <!-- logo begin -->
                         <h1 id="logo">
-                            <a href="index-2.html">
-                                <img class="logo" width="100%" src="images/mimarlogo.png" alt="Mimarlık V1">
+                            <a href="index.html">
+                                <img class="logo" style="width:250px; padding-top:7px;" src="images/mimarlogo.png" alt="Mimarlık V1">
                             </a>
                         </h1>
                         <!-- logo close -->
@@ -191,8 +191,8 @@
             <div class="alert alert-warning">
 					<a class="close" data-dismiss="alert">×</a>
 					<strong>Bilgi!</strong> Henüz Yorum yazılmamış.İlk yorum bırakan sen ol..!
-				  </div>   			 </ul>		
-		
+				  </div>   			 </ul>
+
 		<div class="leave-reply grey-section form">
     		<div id="respond" class="comment-respond">
             <div id="note"></div>
@@ -253,7 +253,7 @@
             </div>
     </div>
 </div>
-</div> 
+</div>
             <!-- footer begin -->
             <footer>
                 <div class="container">
@@ -332,57 +332,57 @@
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    
-    <script type="text/javascript"> 
+
+    <script type="text/javascript">
 		$(function(){
 			function sonucGizle(){
 			$("#note").hide();
 			}
 			$("#submit").click(function(){
 			$("#note").show();
-			$.ajax({ 
+			$.ajax({
 				type: "POST",
 				url: "yorum.php",
-				data: $('#fixform').serialize(), 
-				error:function(){ 
-				alert("Bir hata algılandı."); 
+				data: $('#fixform').serialize(),
+				error:function(){
+				alert("Bir hata algılandı.");
 				},
-				success: function(veri) { 
+				success: function(veri) {
 					 $('#note').html(veri);
 						setTimeout(sonucGizle,3000);
 						document.forms["fixform"].reset();
-					}   
+					}
 				});
 			});
-			
+
 			return false;
 		});
 	</script>
-    <script type="text/javascript"> 
+    <script type="text/javascript">
 		$(function(){
 			function sonucGizlee(){
 			$("#iletisimsonuc").hide();
 			}
 			$("#send_message").click(function(){
 			$("#iletisimsonuc").show();
-			$.ajax({ 
+			$.ajax({
 				type: "POST",
 				url: "mesaj.php",
-				data: $('#contact_form').serialize(), 
-				error:function(){ 
-				alert("Bir hata algılandı."); 
+				data: $('#contact_form').serialize(),
+				error:function(){
+				alert("Bir hata algılandı.");
 				},
-				success: function(veri) { 
+				success: function(veri) {
 					 $('#iletisimsonuc').html(veri);
 						setTimeout(sonucGizlee,3000);
 						document.forms["contactForm"].reset();
-					}   
+					}
 				});
 			});
 			return false;
 		});
 	</script>
-     
+
 
 
 </body>

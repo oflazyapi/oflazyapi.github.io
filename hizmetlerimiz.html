@@ -55,8 +55,8 @@
                     <div class="col-md-12">
                         <!-- logo begin -->
                         <h1 id="logo">
-                            <a href="index-2.html">
-                                <img class="logo" width="100%" src="images/mimarlogo.png" alt="Mimarlık V1">
+                            <a href="index.html">
+                                <img class="logo" style="width:250px; padding-top:7px;" src="images/mimarlogo.png" alt="Mimarlık V1">
                             </a>
                         </h1>
                         <!-- logo close -->
@@ -149,28 +149,28 @@
     <div class="container">
         <div class="row">
                     <div class="col-md-3">
-                <h3><span class="id-color">TİCARİ TASARIM</span></h3> 
+                <h3><span class="id-color">TİCARİ TASARIM</span></h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo invent[...]                <div class="spacer-single"></div>
                 <img src="uploads/hizmetler/thumb/pic_1_1.jpg" width="100%" class="img-responsive" alt="TİCARİ TASARIM">
                 <div class="spacer-single"></div>
                 <a href="HizmetDetay-TICARI-TASARIM.html" class="btn-line btn-fullwidth">HİZMET DETAY</a>
             </div>
 		            <div class="col-md-3">
-                <h3><span class="id-color">HOSPITALLY TASARIMI</span></h3> 
+                <h3><span class="id-color">HOSPITALLY TASARIMI</span></h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo invent[...]                <div class="spacer-single"></div>
                 <img src="uploads/hizmetler/thumb/pic_3.jpg" width="100%" class="img-responsive" alt="HOSPITALLY TASARIMI">
                 <div class="spacer-single"></div>
                 <a href="HizmetDetay-HOSPITALLY-TASARIMI.html" class="btn-line btn-fullwidth">HİZMET DETAY</a>
             </div>
 		            <div class="col-md-3">
-                <h3><span class="id-color">OFİS TASARIMI</span></h3> 
+                <h3><span class="id-color">OFİS TASARIMI</span></h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo invent[...]                <div class="spacer-single"></div>
                 <img src="uploads/hizmetler/thumb/pic_2.jpg" width="100%" class="img-responsive" alt="OFİS TASARIMI">
                 <div class="spacer-single"></div>
                 <a href="HizmetDetay-OFIS-TASARIMI.html" class="btn-line btn-fullwidth">HİZMET DETAY</a>
             </div>
 		            <div class="col-md-3">
-                <h3><span class="id-color">KONUT TASARIMI</span></h3> 
+                <h3><span class="id-color">KONUT TASARIMI</span></h3>
                 <p>Sed ut perspiciatis unde omnis iste natus hata Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore v[...]                <div class="spacer-single"></div>
                 <img src="uploads/hizmetler/thumb/pic_1.jpg" width="100%" class="img-responsive" alt="KONUT TASARIMI">
                 <div class="spacer-single"></div>
@@ -181,7 +181,7 @@
 
 
 
-</div> 
+</div>
             <!-- footer begin -->
             <footer>
                 <div class="container">
@@ -260,57 +260,57 @@
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    
-    <script type="text/javascript"> 
+
+    <script type="text/javascript">
 		$(function(){
 			function sonucGizle(){
 			$("#note").hide();
 			}
 			$("#submit").click(function(){
 			$("#note").show();
-			$.ajax({ 
+			$.ajax({
 				type: "POST",
 				url: "yorum.php",
-				data: $('#fixform').serialize(), 
-				error:function(){ 
-				alert("Bir hata algılandı."); 
+				data: $('#fixform').serialize(),
+				error:function(){
+				alert("Bir hata algılandı.");
 				},
-				success: function(veri) { 
+				success: function(veri) {
 					 $('#note').html(veri);
 						setTimeout(sonucGizle,3000);
 						document.forms["fixform"].reset();
-					}   
+					}
 				});
 			});
-			
+
 			return false;
 		});
 	</script>
-    <script type="text/javascript"> 
+    <script type="text/javascript">
 		$(function(){
 			function sonucGizlee(){
 			$("#iletisimsonuc").hide();
 			}
 			$("#send_message").click(function(){
 			$("#iletisimsonuc").show();
-			$.ajax({ 
+			$.ajax({
 				type: "POST",
 				url: "mesaj.php",
-				data: $('#contact_form').serialize(), 
-				error:function(){ 
-				alert("Bir hata algılandı."); 
+				data: $('#contact_form').serialize(),
+				error:function(){
+				alert("Bir hata algılandı.");
 				},
-				success: function(veri) { 
+				success: function(veri) {
 					 $('#iletisimsonuc').html(veri);
 						setTimeout(sonucGizlee,3000);
 						document.forms["contactForm"].reset();
-					}   
+					}
 				});
 			});
 			return false;
 		});
 	</script>
-     
+
 
 
 </body>
